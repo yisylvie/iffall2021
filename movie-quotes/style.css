@@ -1,0 +1,67 @@
+#body{
+    font-family: avenir;
+    font-size: 15pt;
+    font-weight: lighter;
+    background-color: #f4e1f0;
+    color:rgb(24, 129, 57);
+    margin:0 0;
+}
+
+div{
+    background-color: #0b131b;
+    padding: 15pt 30pt;
+    margin: auto;
+    margin-bottom: 30pt;
+    max-width: 95%;
+    width: fit-content;
+    border-radius: 5pt;
+}
+
+p{
+    color: #f4e1f0;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+h1{
+    text-align: center;
+    font-size: 55pt;
+    font-weight: inherit;
+}
+
+h2{
+    text-align: center;
+    font-size: 25pt;
+    font-style: italic;
+    color:#c53562;
+}
+
+.directions{
+    color: rgb(173 161 131);
+}
+
+.peter{
+    color:#ff5272;
+}
+
+.ray{
+    color:rgb(24, 129, 57);
+}
+
+.dana{
+    color:rgb(109, 84, 202);
+}
+
+.mayor{
+    color:#c67ceb;
+}
+
+.egon{
+    color:#c53562;
+}
+
+.winston{
+    color:rgb(70, 199, 188);
+}
