@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Walbaum'; 
+    src: url('Walbaum/walbaum.ttf'); 
+}
+
+body{
+    font-family: "Walbaum", serif;
+    margin: 0;
+    font-size: 15pt;
+    background-color:   #741b28;
+}
+
+h1{
+    font-family: Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 70pt;
+    margin-top: 0;
+    margin-bottom: 23pt ;
+    line-height: 93pt;
+}
+
+p{
+    line-height: 22pt;
+}
+
+strong{
+    line-height: 40pt;
+}
+
+@keyframes artistUp{
+    from {float : left;}
+    to {float : right;}
+    from {width : 40%;}
+    to {width : 60%;}
+}
+
+@keyframes artistDown{
+    from {float : right;}
+    to {float : left;}
+    from {width : 60%;}
+    to {width : 40%;}
+}
+
+h2{
+    font-family: Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 16pt;
+    line-height: 23pt;
+    margin: 0;
+    /* color:     #5a90c0    ; */
+    color: #9d749f;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 40%;
+}
+
+@keyframes titleUp {
+    from {width:100%;}
+    to {width: 40%;}
+    from {text-align: left;}
+    to {text-align: right;}
+    
+  }  
+  @keyframes titleDown {
+    from {width: 40%;}
+    to {width:100%;}
+
+    from {text-align: right;}
+
+    to {text-align: left;}
+    
+  }  
+
+#title{
+    background-color: #741b2b;
+    /* color:     #a3c0d8    ; */
+        color: #a7e3f9;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: left;
+    /* animation-name: example; */
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+/* #741b28; */
+
+/* h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 16pt;
+    line-height: 23pt;
+    margin: 0;
+    color: #9d749f;
+    width: 40%;
+}
+
+#title {
+    background-color: #792741;
+    color: #a7e3f9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: left;
+} */
+@keyframes centerUp {
+    from {right:40%;}
+    to {right: 10%;}
+   
+  }  
+
+  @keyframes centerDown {
+    from {right:10%;}
+    to {right: 40%;}
+   
+  }  
+
+#center{
+    position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 40%;
+  left: 10%;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+    /* animation: centerUp; */
+}
+
+
+
+#lyrics{
+    background-color: #dcd9ba;
+    color: #020c53;
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    position: absolute;
+    top: 100%;
+    right:0%;
+}
+
+#stitch{
+    position: fixed;
+    width: 11%;
+    right: 3%;
+    bottom: 3%;
+}
