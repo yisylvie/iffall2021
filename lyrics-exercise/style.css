@@ -103,6 +103,7 @@ h2{
     30% {text-align: left;}
     100% {text-align: right;}
 }  
+
 @keyframes titleDown {
     from {width: 40%;}
     to {width:100%;}
