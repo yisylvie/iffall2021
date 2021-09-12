@@ -1,13 +1,39 @@
 @font-face {
     font-family: 'Walbaum'; 
-    src: url('Walbaum/walbaum.ttf'); 
+    src: url('stuff/walbaum.ttf'); 
+}
+
+:root {
+    --dark-bg: #741b28;
+    --dark-bg2: #0f4525;
+    --secondary-text: #9d749f;
+    --secondary-text2: #cda786;   
+    --title: #a7e3f9; 
+    --title2: #a95565;
+    --main-text:  #020c53;
+    --light-bg: #dcd9ba;
+    --shift: 5px;
+        /* color:     #5a90c0    ;  #741b2b*/
 }
 
 body{
     font-family: "Walbaum", serif;
     margin: 0;
     font-size: 15pt;
-    background-color:   #741b28;
+    background-color: var(--dark-bg);
+}
+
+.whitespace{
+    height: 15vh;
+}
+
+.song {
+    position: relative;
+    width: -webkit-fill-available;
+}
+
+#heMele{
+    background-color: var(--dark-bg2);
 }
 
 h1{
@@ -21,15 +47,26 @@ h1{
 
 p{
     line-height: 22pt;
+    margin-bottom: 22pt;
+    margin-top: 0;
 }
 
-strong{
-    line-height: 40pt;
+p:first-child{
+    margin-top: 0;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
+.forms{
+    margin-bottom: 7pt;
 }
 
 @keyframes artistUp{
     from {float : left;}
     to {float : right;}
+
     from {width : 40%;}
     to {width : 60%;}
 }
@@ -37,6 +74,7 @@ strong{
 @keyframes artistDown{
     from {float : right;}
     to {float : left;}
+
     from {width : 60%;}
     to {width : 40%;}
 }
@@ -47,105 +85,106 @@ h2{
     font-size: 16pt;
     line-height: 23pt;
     margin: 0;
-    /* color:     #5a90c0    ; */
-    color: #9d749f;
+    color: var(--secondary-text);
     animation-duration: 1s;
     animation-fill-mode: forwards;
     width: 40%;
 }
 
+#artist2{
+    color: var(--secondary-text2);
+}
+
 @keyframes titleUp {
     from {width:100%;}
     to {width: 40%;}
-    from {text-align: left;}
-    to {text-align: right;}
-    
-  }  
-  @keyframes titleDown {
+
+    0% {text-align: left;}
+    30% {text-align: left;}
+    100% {text-align: right;}
+}  
+@keyframes titleDown {
     from {width: 40%;}
     to {width:100%;}
 
-    from {text-align: right;}
+    0% {text-align: right;}
+    100% {text-align: left;}
+}  
 
-    to {text-align: left;}
-    
-  }  
-
-#title{
-    background-color: #741b2b;
-    /* color:     #a3c0d8    ; */
-        color: #a7e3f9;
-
+.sticky{
     width: 100%;
-    height: 100%;
-    position: fixed;
-    text-align: left;
-    /* animation-name: example; */
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-/* #741b28; */
-
-/* h2 {
-    font-family: Tahoma, sans-serif;
-    font-weight: lighter;
-    font-size: 16pt;
-    line-height: 23pt;
-    margin: 0;
-    color: #9d749f;
-    width: 40%;
+.title {
+    color: var(--title);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    text-align: left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-#title {
-    background-color: #792741;
-    color: #a7e3f9;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    text-align: left;
-} */
+#title2{
+    color: var(--title2);
+}
+
 @keyframes centerUp {
     from {right:40%;}
     to {right: 10%;}
-   
-  }  
-
-  @keyframes centerDown {
+}  
+@keyframes centerDown {
     from {right:10%;}
     to {right: 40%;}
-   
-  }  
+}  
 
-#center{
+.center{
     position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
-  right: 40%;
-  left: 10%;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-    /* animation: centerUp; */
+    top: 50%;
+    top: calc(50% - 5.75pt - (3.5pt / 2));
+    transform: translate(0%, -50%);
+    right: 40%;
+    left: 10%;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-
-
-#lyrics{
-    background-color: #dcd9ba;
-    color: #020c53;
+.lyrics {
+    color: var(--main-text);
     width: 50%;
     padding-left: 10%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    position: absolute;
-    top: 100%;
-    right:0%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    transform: translate(-100%,0%);
+    margin-right: 0;
+    margin-left: 100%;
+    position: relative;
+    z-index: 2;
 }
 
-#stitch{
-    position: fixed;
+.lyricBackground {
+    background-color: var(--light-bg);
+    width: 50%;
+    padding-left: 10%;
+    
+    transform: translate(-100%,0%);
+    margin-right: 0;
+    margin-left: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+#heMele .lyricBackground{
+    height: calc(100% - 100vh - 15vh);
+}
+
+.img{
+    position: absolute;
     width: 11%;
     right: 3%;
-    bottom: 3%;
+    bottom: 5%;
 }
