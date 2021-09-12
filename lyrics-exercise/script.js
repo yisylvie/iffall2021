@@ -49,7 +49,7 @@ const configs = [config0,config1];
 
 var shifts = [0, shift1];
 
-//prevent animation from playing when page is reloaded
+//prevents animation from playing when page is reloaded
 var animationDuration = 1;
 var beginning = true;
 previousScroll = 0;
