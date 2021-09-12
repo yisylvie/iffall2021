@@ -10,7 +10,6 @@ for(var i=0; i<lyrics.length; i++) {
     element[0] = centers[i];
     element[1] = h2s[i];
     element[2] = titles[i];
-    console.log(element);
     songs[i] = element;
 }
 
@@ -19,7 +18,6 @@ for(var i = 0; i<lyricsEdit.length; i++) {
     //wide add extra space
     lyricsEdit[i].style.paddingTop = (titles[0].clientHeight - (centers[0].clientHeight + 93*1.25))/2 + 3.5 + "px";
     lyricsEdit[i].style.paddingBottom = lyricsEdit[i].style.paddingTop;
-    console.log(lyricsEdit[i].style.paddingBottom);
 }
 
 //used https://medium.com/@ryanfinni/the-intersection-observer-api-practical-examples-7844dfa429e9 for help with intersection observer
