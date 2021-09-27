@@ -57,7 +57,7 @@ img{
     content: "*";
 }
 
-.seasons ul::after {
+.seasons::after {
     content: "* Final Season";
     font-size: 0.7rem;
     color: #999;
