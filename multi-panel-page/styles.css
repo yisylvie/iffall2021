@@ -108,11 +108,16 @@ li img{
 }
 
 #lastSection{
-    padding-bottom: 45px;
+    padding-bottom: 62px;
     background-color: rgb(200, 224, 113);
 }
 
 #footer{
     font-size: 20px;
-    background-color:thistle;
+    /* background-color:thistle; */
+}
+
+#footer .content{
+    padding-top: 23px ;
+    padding-bottom: 23px;
 }
