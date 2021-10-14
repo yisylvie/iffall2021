@@ -1,0 +1,118 @@
+/* font-family: 'Archivo Narrow', sans-serif; */
+
+body{
+    margin: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.content{
+    margin: 0px 240px;
+    padding: 40px 0;
+}
+
+/* #headerSection .content{
+    margin: 0;
+} */
+
+h1, h2, h3, h4 {
+    margin: 0;
+    text-align: center;
+}
+
+#headerSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 480px;
+    /* used https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h for help with darkening img */
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/Creation_of_Adam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 80px;
+    line-height: 75px;
+}
+
+h3{
+    font-size: 30px;
+    line-height: 67px;
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 33px;
+}
+
+h4{
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+}
+
+#mainSection img{
+    float: right;
+    width: 400px; 
+    height: 300px; 
+    object-fit: cover;
+    margin: 0 0 40px 40px;
+}
+
+p{
+    font-size: 18px;
+}
+
+#mainSection{
+    background-color: rgb(240, 247, 247);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0;
+}
+
+li{
+    display: block;
+    width: 440px;
+    margin: 0 39px 23px 0;
+}
+
+li p{
+    margin: 10px 0;
+}
+
+li img{
+    float: left;
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+#imgGallery{
+    background-color: rgb(34, 31, 48);
+    color: white;
+}
+
+#lastSection p{
+    font-size: 26px;
+    text-align: center;
+    margin: 0px 126px;
+    line-height: 36px;
+}
+
+#lastSection{
+    padding-bottom: 45px;
+    background-color: rgb(200, 224, 113);
+}
+
+#footer{
+    font-size: 20px;
+    background-color:thistle;
+}
