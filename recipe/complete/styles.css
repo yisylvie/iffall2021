@@ -1,0 +1,221 @@
+/* Mr Eaves San OT Reg */
+
+/* font-family: mr-eaves-sans, sans-serif;*/
+/* font-weight: 200; */
+:root{
+    font-size: 2vw;
+}
+
+@media (orientation: portrait) {
+    :root{
+        font-size: 4vw;
+    }
+}
+
+body{
+    font-family: "mr-eaves-sans", "sans-serif";
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffd5;
+    /* font-size: 30px; */
+    line-height: 1.2em;
+    margin:0;
+    margin-bottom: 3.3rem;
+    padding:0;
+}
+
+#recipe{
+    margin: 0 3.3rem;
+    /* position: relative; */
+}
+
+@media (orientation: portrait) {
+    #recipe{
+        margin: 0;
+    }
+}
+
+h1,h2,h3,p,ol,ul{
+    margin: 0;
+}
+
+h1,h2{
+    font-family: "kansasnew", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 1.3em;
+    line-height: 1.25em;
+    margin-block-end: .3em;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-block-end: .5em;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    h1{
+        width: max-content;
+    }
+}
+
+ul li::marker{
+    font-size: .6em;
+}
+
+ul{
+    padding-inline-start: .6em;
+}
+
+ol{
+    margin-block-end: .6em;
+    padding-inline-start: 1em;
+}
+
+ol li{
+    margin-top: .25em;
+}
+
+.thin{
+    font-size: .9em;
+    /* line-height: 34px; */
+    margin-block-start: .3em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.white{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    position:relative;
+    padding: 1em;
+}
+
+/* used https://css-tricks.com/snippets/css/multiple-borders/ for help with fancy border */
+.white:before {
+    content: " ";
+    position: absolute;
+    z-index: 0;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 1px solid #000000;  
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner > *{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.banner img{
+    left:unset;
+    right:-3.3em;
+    width:65%;
+}
+
+
+
+#heading p{
+    /* width: 13.5em; */
+    max-width: fit-content;
+}
+
+#heading{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 35%;
+    z-index: 1;
+    /* max-width: fit-content; */
+}
+
+@media (orientation: portrait) {
+    .banner {
+        width: 100%;
+    }
+    .banner > * {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .banner img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        left:50%;
+    }
+
+    #heading{
+        width: unset;
+    }
+}
+
+#info {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    margin:2em;
+}
+
+@media (orientation: portrait) {
+    #info {
+        line-height: 2em;
+        flex-wrap: wrap;
+    }
+    #center{
+        display: none;
+    }
+    h3{
+        margin: .5em;
+    }
+}
+
+#main {
+    display: flex;
+    justify-content: left;
+}
+
+#ingredients {
+    position: sticky;
+    top: 2em;
+    margin: 3em;
+}
+
+#instructions {
+    width: 21.6em;
+    padding-top: 1em;
+}
+
+@media (orientation: portrait) {
+    #main {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #ingredients{
+        top:unset;
+        margin: unset;
+    }
+}
