@@ -120,6 +120,7 @@ ol li{
     position: relative;
     height: 100vh;
     width: 100%;
+    max-height: 60vw;
 }
 
 .banner > *{
@@ -153,6 +154,7 @@ ol li{
 @media (orientation: portrait) {
     .banner {
         width: 100%;
+        max-height: unset;
     }
     .banner > * {
         left: 50%;
@@ -165,12 +167,14 @@ ol li{
         left:50%;
     }
 
-    #heading{
+    #heading {
         width: unset;
+        transform: translate(-50%,0%);
+        top: 15%;
     }
 }
 
-#info {
+.info {
     display: flex;
     width: inherit;
     justify-content: space-between;
@@ -179,28 +183,41 @@ ol li{
     margin:2em;
 }
 
+.banner .info{
+    display: none;
+}
+
 @media (orientation: portrait) {
-    #info {
-        line-height: 2em;
-        flex-wrap: wrap;
-    }
-    #center{
+    #recipe > .info {
         display: none;
     }
-    h3{
-        margin: .5em;
+    .banner .info{
+        display: flex;
+        z-index: 1;
+    }
+    .banner .info {
+        display: flex;
+        z-index: 1;
+        margin: 0;
+        width: 80%;
+        transform: translate(-50%,0%);
+        margin-top: 4em;
+        justify-content: space-around;
+    }
+
+    .banner .info:first-of-type{
+        margin-top: 7.3em;
     }
 }
 
 #main {
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
 }
 
 #ingredients {
     position: sticky;
     top: 2em;
-    margin: 3em;
 }
 
 #instructions {
