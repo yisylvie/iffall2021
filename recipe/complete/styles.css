@@ -187,6 +187,7 @@ ol li{
     display: none;
 }
 
+
 @media (orientation: portrait) {
     #recipe > .info {
         display: none;
