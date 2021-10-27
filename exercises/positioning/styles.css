@@ -1,0 +1,39 @@
+.static-example .positioned-element {
+    background-color: green;
+    left: 100px;
+}
+
+.relative-example .positioned-element{
+    background-color: lightblue;
+    z-index: -1;
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.absolute-example .positioned-element{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absolute-example{
+    position: relative;
+
+}
+
+.fixed-example .positioned-element{
+    background-color: purple;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+
+.sticky-example .positioned-element{
+    background-color: rgb(248, 157, 21);
+    position: sticky;
+    top: 50px;
+}
