@@ -1,0 +1,13 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    margin: auto;
+}
+img{
+    height: 40vh;
+}
+
+#sampleImg{
+    width: 70%;
+    text-align: center;
+}
