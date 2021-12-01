@@ -38,7 +38,6 @@ body{
 h1,h2,h3,h4,p,ol,ul, li{
     margin: 0;
     line-height: 1.25em;
-    column-rule: solid 1em blue;
     margin-block-end: 1em;
 }
 
@@ -83,6 +82,7 @@ h1{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 a:visited{
@@ -102,6 +102,13 @@ a:hover{
     #content{
         margin-right: 5%;
         margin-left: 5%;
+    }
+}
+
+@media (max-width: 900px) and (orientation: portrait){
+    #content{
+        margin-right: 0%;
+        margin-left: 0%;
     }
 }
 
