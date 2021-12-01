@@ -1,0 +1,218 @@
+/* font-family: freight-sans-pro, sans-serif;
+font-weight: 300;
+font-style: normal; 
+
+font-family: freight-text-pro, serif;
+font-weight: 300;
+font-style: normal;
+
+400: book
+500: med
+600; semi bold
+700: bold
+*/
+
+
+:root{
+    font-size: 1.5vw;
+    line-height: 1.25em;
+    --dark-grey: #181715;
+    --mid-grey: #51504c;
+    --light-grey: #8d8e88;
+    --gold: #b29c75;
+}
+
+@media (max-width: 900px){
+    :root{
+        font-size: 2vw;
+    }
+}
+
+body{
+    font-family: freight-sans-pro, sans-serif;
+    color: white;
+    margin: auto;
+}
+
+/* clear weird default paragraph spacing */
+h1,h2,h3,h4,p,ol,ul, li{
+    margin: 0;
+    line-height: 1.25em;
+    column-rule: solid 1em blue;
+    margin-block-end: 1em;
+}
+
+h1,h2,h4{
+    font-family: freight-text-pro, serif;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+h4{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+/* navigation */
+
+#navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color:black;
+    padding: 1em 0;
+}
+
+#navigation h4{
+    font-size: unset;
+}
+
+#navigation *{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    font-size: 1.1em;
+}
+
+#content{
+    margin: calc(10% + 15%) 10%;
+    margin-top: 10%;
+}
+
+@media (max-width: 900px){
+    #content{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+br{
+    clear: both;
+}
+
+.subsection{
+    margin-bottom: -3.5rem;
+    padding: 5rem 2rem 7rem 2rem;
+    position: relative;
+}
+
+.subsection > div{
+    position: relative;
+    min-height: 15rem;
+}
+
+.subsection :last-child{
+    margin-bottom: 0;
+}
+
+.left{
+    padding-right: 14rem;
+    background-color: var(--dark-grey);
+    float: left;
+    width: fit-content;
+}
+
+.right{
+    padding-left: 14rem;
+    background-color: var(--mid-grey);
+    float: right;
+}
+
+@media (max-width: 900px){
+    .right{
+        padding-left: 7rem;
+    }
+
+    .left{
+        padding-right: 7rem;
+    }
+}
+
+.left > * {
+    float: left;
+    width: 30rem;
+}
+
+.right > * {
+    float: right;
+    width: 30rem;
+}
+
+/* images */
+
+img{
+    max-height: calc(100% + 3.5rem / 2);
+    max-width: 24rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+}
+
+@media (max-width: 900px){
+    img{
+        display: none;
+    }
+}
+
+.left img{
+    right: -14rem;
+    transform: translate( 50%, -50%);
+}
+
+.right img{
+    left: -14rem;
+    transform: translate( -50%, -50%);
+}
+
+/* header */
+
+.header > *{
+    padding: 3%;
+}
+
+#title{
+    background-color: var(--gold);
+}
+
+#intro{
+    margin-top: -5%;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 900px){
+    #intro{
+        margin-top: 10%;
+    }
+}
+
+#background{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("images/invisible-cities-illustration.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    top:0;
+    z-index: -1;
+}

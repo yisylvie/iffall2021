@@ -1,0 +1,47 @@
+#background{
+    background: url("../images/invisible-cities-illustration-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+/* #main{
+    display: flex;
+    width: inherit;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#main > section{
+    width: 25%;
+    background-color: black;
+} */
+
+/* img{
+    height: calc(100% + 3.5rem / 2);
+    max-width: unset;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.left img{
+    right: -14rem;
+    transform: translate(50%);
+}
+
+.right img{
+    left: -14rem;
+    transform: translate(-50%);
+}
+
+.subsection{
+    position: relative;
+}
+
+.subsection > div{
+    position: relative;
+    min-height: 15rem;
+} */
