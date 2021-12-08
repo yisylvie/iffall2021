@@ -1,0 +1,350 @@
+/* font-family: freight-sans-pro, sans-serif;
+font-weight: 300;
+font-style: normal; 
+
+font-family: freight-text-pro, serif;
+font-weight: 300;
+font-style: normal;
+
+400: book
+500: med
+600; semi bold
+700: bold
+*/
+
+
+:root{
+    font-size: 1.5vw;
+    line-height: 1.25em;
+    --dark-grey: #181715;
+    --mid-grey: #51504c;
+    --light-grey: #8d8e88;
+    --gold: #b29c75;
+}
+
+@media (max-width: 950px){
+    :root{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 950px) and (orientation: portrait){
+    :root{
+        font-size: 3vw;
+    }
+}
+
+body{
+    font-family: "freight-sans-pro", sans-serif;
+    color: white;
+    margin: auto;
+}
+
+/* clear weird default paragraph spacing */
+h1,h2,h3,h4,p,ol,ul, li{
+    margin: 0;
+    line-height: 1.25em;
+    margin-block-end: 1em;
+}
+
+h1,h2,h4{
+    font-family: "fino-sans", serif;
+}
+
+h3{
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+/* marginalia */
+
+.marginalia{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color:black;
+}
+
+#navigation a{
+    width: 25%;
+    text-align: center;
+    padding-top: 1.25em;
+    padding-bottom: .75em;
+    border-bottom: .5em solid black;
+    line-height: 2rem;
+}
+
+#navigation a:hover{
+    border-bottom: .5em solid  var(--gold);
+}
+
+.current{
+    background-color: white;
+    border-bottom: white .5em solid !important;
+}
+
+.current h4{
+    color:black;
+}
+
+.current:hover{
+    border-bottom: .5em solid  white !important;
+}
+
+.marginalia h4{
+    font-size: 1.2em;
+}
+
+.marginalia a *{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: inherit;
+}
+
+#content{
+    margin: calc(10% + 15%) 10%;
+    margin-top: 10%;
+    min-height: 100vh;
+}
+
+/* footer */
+
+#footer{
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+}
+
+#footer a{
+    height: 150px;
+}
+
+#footer :hover{
+    text-decoration: underline;
+}
+
+#footer h4{
+    line-height: 150px;
+    font-size: unset;
+    font-family: "freight-sans-pro", sans-serif;
+    font-weight: normal;
+}
+
+#footer > :first-child{
+    margin-left: 7rem;
+}
+
+@media (max-width: 950px){
+    #footer > :first-child{
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 950px) and (orientation: portrait){
+    #footer{
+        justify-content: left;
+        font-size: .75em;
+    }
+    #footer a{
+        height: 5em;
+    }
+    
+    #footer h4{
+        line-height: 5em;
+    }
+}
+
+@media (max-width: 950px){
+    #content{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 950px) and (orientation: portrait){
+    #content{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+
+br{
+    clear: both;
+}
+
+.subsection{
+    margin-bottom: -3.5rem;
+    padding: 5rem 2rem 7rem 2rem;
+    position: relative;
+}
+
+.subsection > div{
+    position: relative;
+    min-height: 15rem;
+}
+
+.subsection :last-child{
+    margin-bottom: 0;
+}
+
+.left{
+    padding-right: 14rem;
+    background-color: var(--dark-grey);
+    float: left;
+    width: fit-content;
+}
+
+.right{
+    padding-left: 14rem;
+    background-color: var(--mid-grey);
+    float: right;
+}
+
+.left > * {
+    float: left;
+    width: 30rem;
+}
+
+.right > * {
+    float: right;
+    width: 30rem;
+}
+
+
+@media (max-width: 950px){
+    .left{
+        padding-right: 8rem;
+    }
+
+    .right{
+        padding-left: 8rem;
+    }
+}
+
+@media (max-width: 950px) and (orientation: portrait){
+    .subsection > * {
+        width: unset;
+    }
+    .subsection{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 5rem;
+        background-color: var(--dark-grey);
+    }
+}
+
+
+/* images/quotes */
+
+.sideMatter{
+    max-height: calc(100% + 3.5rem / 2);
+    max-width: 24rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    background-color: var(--gold);
+}
+
+.sideMatter h3 {
+    padding: 2em;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 950px) and (orientation: portrait){
+    .sideMatter{
+        display: none;
+    }
+}
+
+.left .sideMatter{
+    right: -14rem;
+    transform: translate( 50%, -50%);
+}
+
+.right .sideMatter{
+    left: -14rem;
+    transform: translate( -50%, -50%);
+}
+
+@media (max-width: 950px){
+    .left .sideMatter{
+        right: -8rem;
+    }
+
+    .right .sideMatter{
+        left: -8rem;
+    }
+
+    .sideMatter{
+        max-width: 12em;
+    }
+
+    .sideMatter h3{
+        padding: 1em;
+        font-size: 1rem;
+    }
+}
+
+/* header */
+
+.header > *{
+    padding: 3%;
+}
+
+#title{
+    background-color: var(--gold);
+}
+
+#intro{
+    margin-top: -5%;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 950px){
+    #intro{
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 950px)  and (orientation: portrait){
+    .header > *{
+        padding: 3rem;
+        margin: 0;
+    }
+    #intro{
+        background-color: var(--gold);
+        margin-top: 0rem;
+    }
+}
+
+#background{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("images/invisible-cities-illustration.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    top:0;
+    z-index: -1;
+}
