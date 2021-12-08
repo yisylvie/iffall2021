@@ -28,7 +28,7 @@ font-style: normal;
     }
 }
 
-@media (max-width: 950px) and (orientation: portrait){
+@media (orientation: portrait){
     :root{
         font-size: 3vw;
     }
@@ -159,7 +159,7 @@ a:visited{
     }
 }
 
-@media (max-width: 950px) and (orientation: portrait){
+@media (orientation: portrait){
     #footer{
         justify-content: left;
         font-size: .75em;
@@ -180,7 +180,7 @@ a:visited{
     }
 }
 
-@media (max-width: 950px) and (orientation: portrait){
+@media (orientation: portrait){
     #content{
         margin-right: 0%;
         margin-left: 0%;
@@ -240,7 +240,7 @@ br{
     }
 }
 
-@media (max-width: 950px) and (orientation: portrait){
+@media (orientation: portrait){
     .subsection > * {
         width: unset;
     }
@@ -270,7 +270,7 @@ br{
     font-size: 1.5rem;
 }
 
-@media (max-width: 950px) and (orientation: portrait){
+@media (orientation: portrait){
     .sideMatter{
         display: none;
     }
