@@ -24,13 +24,13 @@ font-style: normal;
 
 @media (max-width: 950px){
     :root{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 }
 
 @media (orientation: portrait){
     :root{
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 
@@ -38,6 +38,8 @@ body{
     font-family: "freight-sans-pro", sans-serif;
     color: white;
     margin: auto;
+    position: relative;
+    background-color: black;
 }
 
 /* clear weird default paragraph spacing */
@@ -238,17 +240,21 @@ br{
     .right{
         padding-left: 8rem;
     }
+
+
+    #main .subsection > *{
+        width: 20rem;
+    }
 }
 
 @media (orientation: portrait){
     .subsection > * {
-        width: unset;
+        width: unset !important;
     }
     .subsection{
         padding-left: 2rem;
         padding-right: 2rem;
         margin-bottom: 5rem;
-        background-color: var(--dark-grey);
     }
 }
 
@@ -330,10 +336,6 @@ br{
     .header > *{
         padding: 3rem;
         margin: 0;
-    }
-    #intro{
-        background-color: var(--gold);
-        margin-top: 0rem;
     }
 }
 
