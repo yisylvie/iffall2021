@@ -22,7 +22,7 @@ font-style: normal;
     --gold: #b29c75;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px) and (min-height: 55vw){
     :root{
         font-size: 2.5vw;
     }
@@ -155,7 +155,7 @@ a:visited{
     margin-left: 7rem;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px) and (min-height: 55vw){
     #footer > :first-child{
         margin-left: 2rem;
     }
@@ -175,7 +175,7 @@ a:visited{
     }
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px) and (min-height: 55vw){
     #content{
         margin-right: 5%;
         margin-left: 5%;
@@ -232,7 +232,7 @@ br{
 }
 
 
-@media (max-width: 950px){
+@media (max-width: 1100px) and (min-height: 55vw){
     .left{
         padding-right: 8rem;
     }
@@ -292,7 +292,7 @@ br{
     transform: translate( -50%, -50%);
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px) and (min-height: 55vw){
     .left .sideMatter{
         right: -8rem;
     }
@@ -326,13 +326,13 @@ br{
     margin-bottom: 10%;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1100px) and (min-height: 55vw){
     #intro{
         margin-top: 5rem;
     }
 }
 
-@media (max-width: 950px)  and (orientation: portrait){
+@media (max-width: 1100px) and (orientation: portrait){
     .header > *{
         padding: 3rem;
         margin: 0;
