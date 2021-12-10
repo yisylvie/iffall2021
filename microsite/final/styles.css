@@ -156,8 +156,11 @@ a:visited{
 }
 
 @media (max-width: 1100px) and (min-height: 55vw){
-    #footer > :first-child{
-        margin-left: 2rem;
+    #footer > a{
+        margin-left: 2rem !important;
+    }
+    #footer{
+        gap: 0;
     }
 }
 
