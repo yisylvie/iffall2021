@@ -133,7 +133,7 @@ a:visited{
 #footer{
     justify-content: left;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
 }
 
 #footer a{
