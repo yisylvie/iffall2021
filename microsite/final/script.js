@@ -23,3 +23,29 @@ for(var num=0; num<p.length; num++){
         }
     }
 }
+
+//paralax scrolling
+var background = document.getElementById("background");
+
+var totalScrollHeight = body.offsetHeight - window.innerHeight;
+
+let lastKnownScrollPosition = 0;
+let ticking = false;
+
+function scroll(scrollPos) {
+  console.log(scrollPos);
+  background.style.backgroundPositionY = -(scrollPos / 30) + "px";
+}
+
+document.addEventListener('scroll', function(e) {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+        scroll(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
