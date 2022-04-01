@@ -26,6 +26,8 @@ for(var num=0; num<p.length; num++){
 
 //paralax scrolling
 var background = document.getElementById("background");
+console.log(background.style.backgroundPositionY);
+background.style.backgroundPositionY = "-3px";
 
 var totalScrollHeight = body.offsetHeight - window.innerHeight;
 
@@ -34,7 +36,8 @@ let ticking = false;
 
 function scroll(scrollPos) {
   console.log(scrollPos);
-  background.style.backgroundPositionY = -(scrollPos / 30) + "px";
+  background.style.backgroundPositionY = -3 - (scrollPos / 20) + "px";
+  console.log(background.style.backgroundPositionY);
 }
 
 document.addEventListener('scroll', function(e) {

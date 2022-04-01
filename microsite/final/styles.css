@@ -349,6 +349,6 @@ br{
     background: url("images/invisible-cities-illustration.jpeg");
     background-repeat: no-repeat;
     background-size: cover; 
-    top:0;
+    /* background-position-y: 1px; */
     z-index: -1;
 }
